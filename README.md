@@ -51,6 +51,10 @@ Justifique aqui as decisões de arquitetura tomadas em `src/config_negocio.py`, 
 - Como o limite de 30% de carga contribui para a redução de emissões?
 - De que forma a estrutura de dados facilita auditorias de compliance ambiental?
 
+Justificativa: 
+
+O arquivo governanca_si.py organiza os dados de compliance ambiental em um dicionário, facilitando a consulta, manutenção e auditoria das informações. O sistema considera a capacidade máxima de 50 m³ e identifica como ociosa uma viagem com carga inferior a 15 m³, que representa 30% da capacidade do caminhão. Esse controle ajuda a identificar viagens com pouca carga e auxilia no planejamento das rotas. Assim, é possível reduzir viagens desnecessárias, economizar combustível e diminuir a emissão de carbono. Dessa forma, o sistema contribui para a Governança de TI e para os princípios de Green IT, utilizando os dados para melhorar a eficiência da coleta, facilitar auditorias e reduzir impactos ambientais.
+
 ---
 
 ## 📁 Estrutura do Repositório
